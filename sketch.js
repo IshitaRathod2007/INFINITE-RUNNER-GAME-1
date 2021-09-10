@@ -160,7 +160,11 @@ function draw() {
 }
 
 function reset(){
-  
+  gameState = PLAY;
+  obstaclesGroup.destroyEach();
+  cloudsGroup.destroyEach();
+  trex.changeAnimation("running",trex_running);
+  score = 0;
 
 }
 
